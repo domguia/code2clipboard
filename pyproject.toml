@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "code2clipboard"
-version = "0.1.1"
+version = "0.1.2"
 description = "A utility that scans any codebase and generates prompts directly to your clipboard, ready to be pasted into your preferred AI assistant."
 authors = [
   { name = "Domguia Joseph", email = "domguiajm@gmail.com" }
