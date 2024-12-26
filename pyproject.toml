@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=64.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "code2prompt"
+version = "0.1.0"
+description = "A utility that scans any codebase and generates prompts directly to your clipboard, ready to be pasted into your preferred AI assistant."
+authors = [
+  { name = "Domguia Joseph", email = "domguiajm@gmail.com" }
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["tree", "tokens", "clipboard", "pyperclip"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+dependencies = [
+  "pyperclip",
+  "tiktoken",
+  "pathspec",
+]
+requires-python = ">=3.7"
+
+[project.scripts]
+code2prompt = "code2prompt.code2prompt:main"
+
+[project.urls]
+"Source" = "https://github.com/domguia/code2prompt"
+"Tracker" = "https://github.com/domguia/code2prompt/issues"
