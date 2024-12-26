@@ -3,7 +3,7 @@ requires = ["setuptools>=64.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "code2prompt"
+name = "code2clipboard"
 version = "0.1.0"
 description = "A utility that scans any codebase and generates prompts directly to your clipboard, ready to be pasted into your preferred AI assistant."
 authors = [
@@ -17,12 +17,21 @@ classifiers = [
   "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent"
 ]
+
 dependencies = [
-  "pyperclip",
-  "tiktoken",
-  "pathspec",
+    "pathspec",
+    "pyperclip",
+    "tiktoken"
 ]
+
 requires-python = ">=3.7"
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "bump2version",
+    "twine"
+]
 
 [project.scripts]
 code2prompt = "code2prompt.code2prompt:main"

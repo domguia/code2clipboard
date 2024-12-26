@@ -1,12 +1,12 @@
-# **Code2Prompt**
+# **Code2Clipboard**
 
 **Effortlessly transform your codebase into AI-ready prompts and insights.**
 
-## 🚀 **What is Code2Prompt?**
+## 🚀 **What is Code2Clipboard?**
 
-Code2Prompt is a **developer utility** that scans your codebase, tokenizes content, and generates **LLM-ready prompts** directly to your clipboard. With features like directory tree visualization, token analysis, and file merging, it’s designed to save time and supercharge your workflow.
+Code2Clipboard is a **developer utility** that scans your codebase, tokenizes content, and generates **LLM-ready prompts** directly to your clipboard. With features like directory tree visualization, token count preview, and whole project prompt generation, it’s designed to save time and supercharge your workflow.
 
-Whether you're building prompts for your prefered AI Assistant, summarizing a project, or exploring your code structure, Code2Prompt has you covered.
+It will will to add to your prompt a full context of your project, so that your prefered AI Assistant can produce the best possible answer.
 
 ---
 
@@ -26,7 +26,7 @@ Whether you're building prompts for your prefered AI Assistant, summarizing a pr
 ### 1. **From PyPI (Recommended)**
 
 ```bash
-pip install code2prompt
+pip install code2clipboard
 ```
 
 ### 2. **From Source**
@@ -34,25 +34,25 @@ pip install code2prompt
 Clone the repository and install locally:
 
 ```bash
-git clone https://github.com/domguia/code2prompt.git
-cd code2prompt
+git clone https://github.com/domguia/code2clipboard.git
+cd code2clipboard
 pip install .
 ```
 
 Or install directly from GitHub:
 
 ```bash
-pip install git+https://github.com/domguia/code2prompt.git
+pip install git+https://github.com/domguia/code2clipboard.git
 ```
 
 ---
 
 ## 🛠️ **Usage**
 
-After installation, the `code2prompt` CLI is ready to use. By default, it **merges files** and **displays a directory tree**:
+After installation, the `code2clipboard` CLI is ready to use. By default, it **merges files** and **displays a directory tree**:
 
 ```bash
-code2prompt
+code2clipboard
 ```
 
 ### 🔧 **Options**
@@ -68,22 +68,22 @@ code2prompt
 
 1. **Generate a directory tree**:
    ```bash
-   code2prompt --tree
+   code2clipboard --tree
    ```
 
 2. **Analyze tokens in Python files only**:
    ```bash
-   code2prompt --tokens --include '*.py'
+   code2clipboard --tokens --include '*.py'
    ```
 
 3. **Merge files into a clipboard-ready prompt**:
    ```bash
-   code2prompt --include '*.py' '*.md'
+   code2clipboard --include '*.py' '*.md'
    ```
 
 4. **Include hidden files and exclude logs**:
    ```bash
-   code2prompt --add-hidden --exclude '*.log'
+   code2clipboard --add-hidden --exclude '*.log'
    ```
 
 ---
@@ -93,7 +93,7 @@ code2prompt
 ### **Default Behavior (Merge + Tree)**
 
 ```bash
-code2prompt
+code2clipboard
 ```
 
 **Output:**
@@ -110,7 +110,7 @@ project/        - 32kb ~6.2k tokens
 ### **Tree Only**
 
 ```bash
-code2prompt --tree
+code2clipboard --tree
 ```
 
 **Output:**
@@ -125,7 +125,7 @@ project/        - 32kb ~6.2k tokens
 ### **Token Analysis**
 
 ```bash
-code2prompt --tokens
+code2clipboard --tokens
 ```
 
 **Output:**
@@ -135,7 +135,7 @@ Estimated total tokens: 6.2k
 
 ---
 
-## 🧑‍💻 **Why Developers Love Code2Prompt**
+## 🧑‍💻 **Why Developers Love Code2Clipboard**
 
 - **Speed Up Prompt Creation**: Build prompts directly from your codebase, no manual copy-pasting required.  
 - **Token Awareness**: Tailor your prompts to fit within LLM token limits effortlessly.  
@@ -164,7 +164,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 🌟 **Feedback & Support**
 
-Found an issue or have a feature request? Open an issue on [GitHub Issues](https://github.com/domguia/code2prompt/issues). We’d love to hear your feedback!
+Found an issue or have a feature request? Open an issue on [GitHub Issues](https://github.com/domguia/code2clipboard/issues). We’d love to hear your feedback!
 
 Happy coding! 🚀
 
